@@ -42,4 +42,3 @@
         {!! $products->links() !!}
     </div>
 @endsection
-

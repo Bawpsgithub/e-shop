@@ -50,7 +50,7 @@ class MenuController extends Controller
         ]);
     }
 
-    public function  update(Menu $menu, CreateFormRequest $request)
+    public function update(Menu $menu, CreateFormRequest $request)
     {
         $this->menuService->update($request, $menu);
 
@@ -63,9 +63,10 @@ class MenuController extends Controller
         if ($result) {
             return response()->json([
                 'error' => false,
-                'massage' => 'Xóa thành công'
+                'message' => 'Xóa thành công'
             ]);
         }
+
         return response()->json([
             'error' => true
         ]);
